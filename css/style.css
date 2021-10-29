@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500px;
+    padding-bottom: 50px;
+    display: block;
+    position: relative;
+    background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D");
+    background-size: cover;
+    background-position-y: center;
+    /* background-repeat: no-repeat; */
+    /* width: 1280px; */
+    height: 585.7px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 10px 10px;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.navbar-middle{
+    float: right;
+    /* display: inline-block; */
+    margin: 5px;
+    align-items: center;
+
+}
+.navbar-right{
+    float: right;
+    /* display: inline-block; */
+    margin: 5px;
+    align-items: center;
+}
+.logo {
+  /* box-sizing: border-box; */
+  width: 120px;
+  position: fixed;
+  /* float: left; */
+  top: 20px;
+  left: 42px;
+  padding: 2px;
+}
+
