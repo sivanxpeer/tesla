@@ -50,6 +50,7 @@ a {
   top: 20px;
   left: 42px;
   padding: 0px 2px;
+  /* filter: invert(100%); */
 }
 
 .navbar {
@@ -109,7 +110,6 @@ ul.navbar-middle-menu {
   /* margin: auto; */
 }
 
-
 .box-1 {
   display: inline-block;
   border: purple solid 2px;
@@ -126,41 +126,71 @@ ul.navbar-middle-menu {
   /* box-sizing: border-box; */
   display: inline-block;
   position: relative;
-    /* top:5px; */
+  /* top:5px; */
   margin: auto;
   fill: white;
 }
 
-.span-1{
-    border:skyblue 2px solid;
-    box-sizing: border-box;
-    height: 120px;
+.span-1 {
+  border: skyblue 2px solid;
+  box-sizing: border-box;
+  height: 120px;
 
-    position: relative;
-    top:80px;
-    left: 5px;
-    margin: auto;
+  position: relative;
+  top: 80px;
+  left: 5px;
+  margin: auto;
 }
 
 .speedometer-value {
-    /* position: relative; */
-    /* top:0px; */
-    /* box-sizing: border-box; */
+  height: 200px;
+  position: relative;
+  border: deeppink 2px solid;
+}
+.speedometer-value.text {
+  /* align-content: center; */
+  display: inline-block;
+  position: relative;
+  /* bottom:45px; */
+  /* left: 5px; */
+  height: 120px;
+  width: 80px;
+  /* box-sizing: border-box; */
+  border: lime 2px solid;
+  margin: auto;
+}
+
+.side-navbar {
+  position: relative;
+  top: 200px;
+  float: left;
+  border: 2px solid forestgreen;
+  font-size: large;
+}
+
+.side-navbar:hover{
     
 }
-.text {
-    /* align-content: center; */
-    display: inline-block;
-    position: relative;
-    bottom:45px;
-    left: 5px;
-    height: 120px;
-    width: 80px;
-    box-sizing: border-box;
-    border: lime 2px solid;
-    
- }
 
-/* background-repeat: no-repeat;
-background-size: cover;
-background-position-x: -200px; */
+ul li {
+  color: pink;
+}
+/* page 2 */
+
+h1,
+h2 {
+}
+p,
+.container-page-2 h1,
+.container-page-2 h2 {
+  /* font-style: normal; */
+  color: black;
+}
+
+.learn-more {
+  display: inline-block;
+}
+
+button {
+  background-color: black;
+}
