@@ -2,26 +2,54 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Gotham Bold", "GothamSSm", "Gotham Light", "Gotham Medium";
+  /* font-family: "Gotham SSm", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif; */
   /* font-family: "Rubik", sans-serif; */
   color: white;
   font-weight: 500px;
   line-height: 1.7em;
 }
-
-/* @font-face {
+/* html {
+    scroll-behavior: smooth;
+}
+html,
+body {
+    scroll-snap-type: y mandatory;
 } */
 
+@font-face {
+  font-family: "Gotham Bold";
+  src: url("/font/GothamSSm-Bold_Web.woff2") format("opentype");
+}
+@font-face {
+  font-family: GothamSSm;
+  src: url("/font/GothamSSm-Book_Web.woff2") format("TrueType");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gotham Light";
+  src: url("/font/GothamSSm-Light_Web.woff2") format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Gotham Medium";
+  src: url("/font/GothamSSm-Medium_Web.woff2") format("opentype");
+  font-weight: 500;
+}
+
 h1 h2 h3 button {
-  font-family: "Gotham SSm";
+  font-family: Gotham Bold;
   /* , -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; */
   /* font-size: 36px; */
-  font-weight: 400;
+  font-weight: 500;
   padding-bottom: 20px;
   margin: auto;
 }
-
+/* 
+h1{
+    font-family: Gotham Bold;
+} */
 p {
   margin: 10px 0;
 }
@@ -56,6 +84,7 @@ a {
   background-image: url("https://tesla-cdn.thron.com/delivery/public/image/tesla/8fa80996-ac5c-4cef-9534-a61a9457bfb3/bvlatuR/std/2880x1800/M3-Hero-LHD-US-D");
   background-size: cover;
   background-position-y: center;
+  /* scroll-snap-align: start; */
 }
 
 .navbar {
@@ -66,15 +95,14 @@ a {
   overflow: auto;
   align-items: center;
 }
+
 .logo {
-  /* border: 3px solid yellow; */
-  /* margin-right: 20px; */
   width: 120px;
   position: fixed;
   top: 20px;
   left: 42px;
   padding: 0px 2px;
-  /* filter: invert(100%); */
+  fill: white;
 }
 
 .navbar-middle,
@@ -105,7 +133,7 @@ ul.navbar-middle-menu {
 }
 
 .navbar ul li a:hover {
-  background: grey;
+  background: rgba(168, 166, 166, 0.795);
   border-radius: 12px;
   padding: 6px;
   transition-duration: 0.4s;
@@ -113,6 +141,8 @@ ul.navbar-middle-menu {
 
 .tesla-3-header {
   /* border: tomato 2px solid; */
+  font-family: "GothamSSm";
+  font-weight: 500;
   position: absolute;
   text-align: center;
   top: 90px;
@@ -131,7 +161,6 @@ ul.navbar-middle-menu {
   text-align: center;
   align-content: center;
   margin: auto;
-  /* vertical-align: center; */
 }
 
 .box-1,
@@ -147,14 +176,6 @@ ul.navbar-middle-menu {
   float: left;
   position: relative;
   height: 100%;
-
-  /* margin: auto; */
-  /*
-   display: inline-block;
-  width: 100px;
-  height: 80px;
-  text-align: center;
-  align-content: center; */
 }
 
 .speedometer-image-svg {
@@ -190,22 +211,11 @@ ul.navbar-middle-menu {
   width: 100%;
   bottom: 0;
   left: 0;
-  /* display: inline-block;
-  position: relative;
-  width: 100%;
-  font-size: small;
-  text-align: center;
-  column-span: 2; */
 }
 
 .speedometer-value.text {
   position: relative;
   padding: 4px;
-  /* position: relative;
-  float: bottom;
-  text-align: center;
-  font-size: 10px;
-  font-weight: lighter; */
 }
 
 .box-2 {
@@ -213,20 +223,12 @@ ul.navbar-middle-menu {
   border: darkviolet 3px solid;
   float: left;
   height: 100%;
-
-  /* 
-display: inline-block;
-position: relative;
-width: 100px; */
 }
 
 .box-3 {
   border: darkslategrey 3px solid;
   float: left;
   height: 100%;
-  /* display: inline-block;
-    position: relative;
-    width: 120px; */
 }
 
 .box-4 {
@@ -234,10 +236,6 @@ width: 100px; */
   float: right;
   height: 100%;
   align-content: center;
-
-  /* display: inline-block;
-    position: relative;
-    width: 120px; */
 }
 
 .box-3-text-2,
@@ -265,22 +263,12 @@ width: 100px; */
   padding: 5px;
   margin-top: 18px;
 }
-/* .box-4 .order-now a {
-  font-weight: 500;
-} */
-/* .box-4 .order-now :hover {
-  background-color: white;
-padding: 5px;
-width: 150px;
-} */
-/* .box-4 .order-now a:hover {
+.box-4-page2.order-now {
+  display: inline-block;
+  border: black 2px solid;
   border-radius: 15px;
-  font-weight: bolder;
-  width: 150px;
-  padding: 5px;
-  color: black;
-} */
-
+  background-color: transparent;
+}
 .side-navbar {
   position: fixed;
   display: inline-block;
@@ -294,7 +282,6 @@ width: 150px;
   font-weight: lighter;
 }
 
-
 .side-navbar li a {
   color: rgba(233, 233, 233, 0.5);
 }
@@ -305,24 +292,15 @@ width: 150px;
   z-index: 10;
 }
 
-.chat .chat-svg-image{
-background-color: white;
-border-radius: 20px;
-border: white 1px solid;
-padding: 7px;
-
+.chat-svg-image {
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+  background-color: white;
+  border-radius: 20px;
+  border: white 1px solid;
+  padding: 7px;
 }
-
-/* 
-ul li {
-    color: pink;
-} */
-
-/* page 2 */
-
-/* h1,
-h2 {
-} */
 
 p,
 .container-page-2 h1,
@@ -332,38 +310,136 @@ p,
   color: black;
 }
 /* max-width: 1290px;
-    height: 585.7px; */
+height: 585.7px; */
 
 .container-page-2 {
+  margin-top: -82px;
   position: relative;
+  float: right;
   width: 100vw;
   height: 100vh;
   border: 3px springgreen solid;
+    background-position-y: center;
+
+  /* scroll-snap-align: start; */
 }
 
+.logo-page-2 {
+  width: 120px;
+  position: relative;
+  top: 120px;
+  fill: black;
+  left: 42px;
+  padding: 0px 2px;
+  /* filter: invert(100%); */
+}
 .aside-safety-content {
   width: 40%;
-  height: 100vh;
+  height: 100vh - 10vh;
   border: blue 2px solid;
   display: inline;
   position: absolute;
+  top: 50px;
   /* padding: -5000px; */
   /* margin: 0; */
   /* float: left; */
   /* top: 0px; */
 }
-
-.car-background-image {
-  border: 2px orange solid;
-  height: 100vh;
-  width: 60%;
-  float: right;
-  position: relative;
-}
-.learn-more {
+.aside-safety-content p,
+.aside-safety-content {
+  padding: 0 30px;
   display: inline-block;
 }
 
+.car-background-image {
+  background-image: url(/images/model_3_safety_hero.png);
+  float: right;
+  background-size: cover;
+  width: 70%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position-x: -200px;
+  margin-top: -31px;
+}
+
+.car-background-image {
+  /* display: inline-block; */
+  /* position: absolute; */
+  /* margin-top: 0; */
+  border: 2px orange solid;
+  /* height: 500vh; */
+  /* height: 585.7px;  */
+    /* height: 500vh ; */
+  width: 60%;
+  top: 0;
+  float: right;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* margin: auto; */
+  /* cursor: zoom-in; */
+  /* background-color: hsl(0, 0%, 90%); */
+  /* transition: background-color 300ms; */
+}
+/* -webkit-user-select: none; */
+
+.car-background-image .background-image-page-2 {
+  position: relative;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-size: cover;
+
+  /* width:60%;   */
+  /* height:500px;  */
+}
+
+.buttons-container {
+  position: relative;
+  display: inline-block;
+  border: brown 1px solid;
+  width: 100%;
+}
+.learn-more {
+  border: 1px solid royalblue;
+  display: inline-block;
+}
+
+.more .box-4-page2 {
+  display: inline-block;
+  position: relative;
+  /* border: 2px solid black; */
+}
+
 button {
-  background-color: black;
+  color: black;
+  /* color:invert(100%); */
+  /* background-color: ; */
+}
+
+
+
+/* page 3 */
+
+
+.container-page-3{
+    border: tomato 2px bold;
+    /* width: 1289px;
+    height:585.7px; */
+    /* scroll-snap-align: start; */
+    position: relative;
+    margin-top: -100px;
+  position: relative;
+  float: right;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.upper-container{
+    position:relative;
+    float: top;
+border: tomato 2px bold;
+    background-image: url(/images/page-3-background-bottom.jpeg);
+
 }
