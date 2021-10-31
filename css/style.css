@@ -50,8 +50,11 @@ h1 h2 h3 button {
 h1{
     font-family: Gotham Bold;
 } */
+
+span,
 p {
   margin: 10px 0;
+  font-family: Gotham Medium;
 }
 
 body::-webkit-scrollbar {
@@ -69,12 +72,16 @@ a {
   text-decoration: none;
   text-align: center;
   font-weight: 500;
-  font-family: "Gotham SSm";
+  font-family: Gotham Medium;
 }
 
+.navbar-middle.a {
+  font-family: Gotham Bold;
+}
+/* max-width: 1290px;
+height: 585.7px; */
+
 .container-page-1 {
-  /* max-width: 1290px;
-  height: 585.7px; */
   position: relative;
   font-family: "Rubik" sans-serif;
   max-width: 100vw;
@@ -103,6 +110,7 @@ a {
   left: 42px;
   padding: 0px 2px;
   fill: white;
+  z-index: 100;
 }
 
 .navbar-middle,
@@ -131,7 +139,9 @@ ul.navbar-middle-menu {
   right: 20px;
   /* margin: 0px 5px; */
 }
-
+.navbar ul li a {
+  font-family: Gotham Bold;
+}
 .navbar ul li a:hover {
   background: rgba(168, 166, 166, 0.795);
   border-radius: 12px;
@@ -154,7 +164,7 @@ ul.navbar-middle-menu {
 .footer {
   /* text-indent: 0.8px; */
   position: relative;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 50vw;
   height: 80px;
   bottom: 170px;
@@ -172,14 +182,14 @@ ul.navbar-middle-menu {
 }
 
 .box-1 {
-  border: pink solid 2px;
+  /* border: pink solid 2px; */
   float: left;
   position: relative;
   height: 100%;
 }
 
 .speedometer-image-svg {
-  border: 2px solid forestgreen;
+  /* border: 2px solid forestgreen; */
   float: left;
   fill: white;
   height: 40px;
@@ -193,7 +203,7 @@ ul.navbar-middle-menu {
 }
 
 .speedometer-value {
-  border: yellow 2px solid;
+  /* border: yellow 2px solid; */
   float: left;
   height: 65%;
   /* display: inline-block;
@@ -205,7 +215,7 @@ ul.navbar-middle-menu {
 }
 
 .span-1 {
-  border: black 2px solid;
+  /* border: black 2px solid; */
   display: inline-block;
   position: absolute;
   width: 100%;
@@ -220,19 +230,19 @@ ul.navbar-middle-menu {
 
 .box-2 {
   position: relative;
-  border: darkviolet 3px solid;
+  /* border: darkviolet 3px solid; */
   float: left;
   height: 100%;
 }
 
 .box-3 {
-  border: darkslategrey 3px solid;
+  /* border: darkslategrey 3px solid; */
   float: left;
   height: 100%;
 }
 
 .box-4 {
-  border: darkviolet 3px solid;
+  /* border: darkviolet 3px solid; */
   float: right;
   height: 100%;
   align-content: center;
@@ -242,7 +252,7 @@ ul.navbar-middle-menu {
 .box-2-text-2 {
   height: 40%;
   color: white;
-  border: greenyellow 3px solid;
+  /* border: greenyellow 3px solid; */
   position: relative;
   bottom: 17px;
   font-family: "Rubik", sans-serif;
@@ -262,12 +272,20 @@ ul.navbar-middle-menu {
   width: 140px;
   padding: 5px;
   margin-top: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.box-4-page2.order-now {
+
+
+.box-4.order-now a:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.box-4-page2.order-now p{
   display: inline-block;
   border: black 2px solid;
   border-radius: 15px;
-  background-color: transparent;
+  background-color: white;
+  color: black;
 }
 .side-navbar {
   position: fixed;
@@ -277,14 +295,16 @@ ul.navbar-middle-menu {
   line-height: 0px;
   padding: 0%;
   /* color: grey; */
-  border: 2px solid forestgreen;
+  /* border: 2px solid forestgreen; */
   font-size: small;
   font-weight: lighter;
 }
 
 .side-navbar li a {
   color: rgba(233, 233, 233, 0.5);
+  font-family: Gotham Medium;
 }
+
 .side-navbar li a:hover + .side-navbar a {
   visibility: visible;
   transition-duration: 0.4s;
@@ -295,11 +315,13 @@ ul.navbar-middle-menu {
 .chat-svg-image {
   position: absolute;
   bottom: 100px;
-  right: 20px;
+  right: 50px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 30px;
   border: white 1px solid;
-  padding: 7px;
+  padding: 10px;
+  text-align: center;
+  align-content: center;
 }
 
 p,
@@ -318,8 +340,8 @@ height: 585.7px; */
   float: right;
   width: 100vw;
   height: 100vh;
-  border: 3px springgreen solid;
-    background-position-y: center;
+  /* border: 3px springgreen solid; */
+  background-position-y: center;
 
   /* scroll-snap-align: start; */
 }
@@ -327,16 +349,22 @@ height: 585.7px; */
 .logo-page-2 {
   width: 120px;
   position: relative;
-  top: 120px;
+  /* top: 40px; */
   fill: black;
   left: 42px;
   padding: 0px 2px;
+  z-index: 200;
+  fill: black;
+  top: 20px;
+  left: 42px;
+  padding: 0px 2px;
+
   /* filter: invert(100%); */
 }
 .aside-safety-content {
   width: 40%;
   height: 100vh - 10vh;
-  border: blue 2px solid;
+  /* border: blue 2px solid; */
   display: inline;
   position: absolute;
   top: 50px;
@@ -359,17 +387,11 @@ height: 585.7px; */
   height: 100vh;
   background-repeat: no-repeat;
   background-position-x: -200px;
-  margin-top: -31px;
+  margin-top: -25px;
 }
 
 .car-background-image {
-  /* display: inline-block; */
-  /* position: absolute; */
-  /* margin-top: 0; */
-  border: 2px orange solid;
-  /* height: 500vh; */
-  /* height: 585.7px;  */
-    /* height: 500vh ; */
+  /* border: 2px orange solid; */
   width: 60%;
   top: 0;
   float: right;
@@ -396,50 +418,75 @@ height: 585.7px; */
 
 .buttons-container {
   position: relative;
+  top: 100px;
   display: inline-block;
   border: brown 1px solid;
   width: 100%;
 }
+
 .learn-more {
   border: 1px solid royalblue;
   display: inline-block;
+  border-radius: 20px;
+  font-family: Gotham Bold;
 }
 
-.more .box-4-page2 {
+.buttons-container.learn-more a {
+}
+
+.more {
+  border: black solid 3px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  width: 37px;
+}
+/* .learn-more .learn-more-page-2 {
+  border: 1px solid royalblue;
+  display: inline-block;
+  border-radius: 20px;
+} */
+
+/* .order-now-page-2{
+    display: inline-block;
+    position: relative;  
+} */
+/* .more .box-4-page2 {
   display: inline-block;
   position: relative;
-  /* border: 2px solid black; */
-}
+  /* border: 2px solid black; 
+} 
+  */
 
 button {
   color: black;
+  border-radius: 10px;
   /* color:invert(100%); */
   /* background-color: ; */
 }
 
-
-
 /* page 3 */
 
-
-.container-page-3{
-    border: tomato 2px bold;
-    /* width: 1289px;
+.container-page-3 {
+  border: tomato 2px bold;
+  /* width: 1289px;
     height:585.7px; */
-    /* scroll-snap-align: start; */
-    position: relative;
-    margin-top: -100px;
+  /* scroll-snap-align: start; */
+  position: relative;
+  margin-top: -100px;
   position: relative;
   float: right;
   width: 100vw;
   height: 100vh;
-  
 }
 
-.upper-container{
-    position:relative;
-    float: top;
-border: tomato 2px bold;
-    background-image: url(/images/page-3-background-bottom.jpeg);
-
+.upper-container {
+  position: relative;
+  float: top;
+  border: tomato 2px bold;
+  background-image: url(/images/page-3-background-bottom.jpeg);
+  background-size: cover;
+  width: 100%;
+  height: 60%;
+  margin-top: 100px;
 }
